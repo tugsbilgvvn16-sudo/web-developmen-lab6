@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зургийн цомог — Лаб 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#gallery">Үндсэн агуулга руу шилжих</a>
+
+  <header class="wrap top">
+    <h1>Зургийн цомог</h1>
+    <div class="tools">
+      <button id="flipAll" type="button">Бүгдийг эргүүлэх</button>
+      <button id="theme" type="button" aria-pressed="false">
+        <!-- inline SVG: чимэглэл тул дэлгэц уншигчаас нуусан -->
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        Харанхуй горим
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="gallery" aria-labelledby="g-title">
+      <h2 id="g-title">Галерей</h2>
+      <ul class="grid">
+        <li style="--i:0"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo1.jpg" alt="Уулын цуваа ба нарны туяа" width="800" height="600" loading="lazy"><figcaption>Хөвсгөл</figcaption></figure>
+            <div class="face back"><p>Хөвсгөл нуурын эрэг, өглөөний цаг.</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+        <li style="--i:1"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo2.jpg" alt="Үдшийн дөлгөөн уулс" width="800" height="600" loading="lazy"><figcaption>Хустай</figcaption></figure>
+            <div class="face back"><p>Хустайн нурууны үдэш.</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+        <li style="--i:2"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo3.jpg" alt="Алтан өнгийн говийн толгод" width="800" height="600" loading="lazy"><figcaption>Говь</figcaption></figure>
+            <div class="face back"><p>Говийн шаргал толгод</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+        <li style="--i:3"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo4.jpg" alt="Ногоон хөндий ба уулс" width="800" height="600" loading="lazy"><figcaption>Орхон</figcaption></figure>
+            <div class="face back"><p>Орхон хөндийн зуны тал.</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+        <li style="--i:4"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo5.jpg" alt="Цэнхэр манан дахь уулсын хэлбэр" width="800" height="600" loading="lazy"><figcaption>Алтай</figcaption></figure>
+            <div class="face back"><p>Алтай Таван Богдын уулс.</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+        <li style="--i:5"><div class="card">
+          <div class="inner">
+            <figure class="face front"><img src="img/photo6.jpg" alt="Тэнгэр ба уулсын тусгал" width="800" height="600" loading="lazy"><figcaption>Тэрэлж</figcaption></figure>
+            <div class="face back"><p>Горхи-Тэрэлжийн мэлхий хад</p></div>
+          </div>
+          <button class="flip" type="button" aria-pressed="false">Эргүүлэх</button>
+        </div></li>
+      </ul>
+    </section>
+
+    
+  </main>
+</body>
+</html>
